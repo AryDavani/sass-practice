@@ -1,3 +1,12 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// color pallet
 $dark-gray: #2d2d2d;
 $red: red;
 $orange: orange;
@@ -7,13 +16,33 @@ $blue: blue;
 $purple: purple;
 
 body{
-  background-color: $dark-gray;
+  background-color: rgb(252, 226, 174);
 }
 
+.box {
+  -webkit-transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 500ms;
+
+  transform: translate(0, 0);
+  transition: transform 500ms;
+}
+
+.box.move {
+  -webkit-transform: translate(100px, 100px);
+  transform: translate(100px, 100px);
+}
+
+
 h1{
-  color: rgb(255, 240, 189);
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 100px;
   text-align: center;
   text-shadow: 7px 7px $red, 14px 14px $orange, 21px 21px $yellow, 28px 28px $green, 35px 35px $blue, 42px 42px $purple;
+}
+
+nav{
+  li{
+    color: $yellow;
+  }
 }
